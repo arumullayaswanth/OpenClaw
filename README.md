@@ -92,6 +92,14 @@ ollama run llama3.1:70b
 
 # 3️⃣ Install OpenClaw
 
+```bash
+sudo apt remove nodejs npm -y
+sudo apt autoremove -y
+sudo apt update
+sudo apt install nodejs npm -y
+
+```
+
 Install:
 
 ```bash
