@@ -127,11 +127,23 @@ openclaw uninstall
 ---
 
 # 5️⃣ Create Full-Access Config
+step-1 : Create the .openclaw folder
+```bash
+mkdir -p ~/.openclaw
+```
+This creates the folder in your home directory.
 
-Open config file:
+step-2 : Step 2 — Ensure you own the folder
+```bash
+chown -R yaswanth:yaswanth ~/.openclaw
+chmod 700 ~/.openclaw
+```
+This makes sure your user can write inside it.
+
+step-3 : Create or edit the config file
 
 ```bash
-nano ~/.openclaw/config.json
+vim ~/.openclaw/config.json
 ```
 
 Paste this configuration:
@@ -168,7 +180,7 @@ Paste this configuration:
       "model": {
         "primary": "ollama/llama3.1:70b"
       },
-      "workspace": "/Users/YOUR_USERNAME/AI_WORKSPACE",
+      "workspace": "/Users/yaswanth/AI_WORKSPACE",
       "maxConcurrent": 6,
       "subagents": {
         "maxConcurrent": 12
@@ -197,6 +209,14 @@ Paste this configuration:
 ```bash
 mkdir ~/AI_WORKSPACE
 ```
+This ensures OpenClaw can read/write data there.
+After these steps:
+```bash
+ls -ld ~/.openclaw
+ls -l ~/.openclaw/config.json
+ls -ld ~/AI_WORKSPACE
+```
+Everything should exist and be owned by you (yaswanth).
 
 ---
 
