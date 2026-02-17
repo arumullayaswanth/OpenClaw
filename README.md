@@ -243,10 +243,21 @@ docker --version
 ---
 
 # 8️⃣ Run OpenClaw in Full Access Mode
+```bash
+openclaw onboard
+```
+✅ Why this one:
+- It checks your config and workspace
+- Guides you through any missing steps
+- Prevents accidental execution of unsafe commands
+- Ensures your models (like llama3.1:70b) are ready
+
+(or)
 
 ```bash
 openclaw run --dangerously-allow-all
 ```
+for full automation with all tools enabled.
 
 ⚠️ This gives full system execution permissions.
 
