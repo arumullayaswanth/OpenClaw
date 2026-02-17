@@ -54,6 +54,10 @@ Verify:
 ```bash
 ollama --version
 ```
+- ollama CLI
+  ```bash
+  ollama
+  ```
 
 ---
 
