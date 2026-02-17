@@ -133,7 +133,7 @@ mkdir -p ~/.openclaw
 ```
 This creates the folder in your home directory.
 
-step-2 : Step 2 — Ensure you own the folder
+step-2 : Ensure you own the folder
 ```bash
 chown -R yaswanth:yaswanth ~/.openclaw
 chmod 700 ~/.openclaw
